@@ -4,7 +4,7 @@ import pickle
 from utils import get_coinlist, add_site_info, add_github_info
 
 
-coin_list = get_coinlist("BTC")[:5]
+coin_list = get_coinlist("BTC")
 attr = ["name", "code", "market", "active", "github", "website", "explorer1", "explorer2", "forum",
         "announcement", "commits", "branchs", "releases", "contributors", "opened_issues", "closed_issues"]
 with open('./coinlist.csv', 'w') as f:

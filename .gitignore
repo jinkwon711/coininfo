@@ -138,3 +138,5 @@ venv.bak/
 # End of https://www.gitignore.io/api/macos,python,jupyternotebook
 
 jupyter_notebook/
+coinlist.csv
+
