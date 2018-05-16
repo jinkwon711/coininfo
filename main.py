@@ -13,8 +13,11 @@ with open('./coinlist.csv', 'w') as f:
     for coin in coin_list:
         add_site_info(coin)
         if coin.active == "True":
-            add_github_info(coin)
-            f.write(str(coin) + "\n")
+            try:
+                add_github_info(coin)
+                f.write(str(coin) + "\n")
+            except:
+                pass
 
 
 # save coin data as binary
